@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBLIC FACE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-box">
+        <img src="images/logo.png" alt="PUBLIC FACE Logo" width="80">
+        <span class="app-name">PUBLIC FACE</span>
+    </div>
+</header>
+
+<div class="form-box" id="signupForm">
+    <h3>Sign Up for PUBLIC FACE</h3>
+    <input type="text" id="signupName" placeholder="Full Name">
+    <input type="text" id="signupEmail" placeholder="Email or Phone">
+    <input type="password" id="signupPassword" placeholder="Password">
+    <button type="button" class="signup-submit">Sign Up</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: #1877f2;
+    color: white;
+    padding: 15px;
+}
+
+.logo {
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* Notification */
+.notification {
+    background: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/* Profile Card */
+.profile-card {
+    background: white;
+    width: 280px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #1877f2; /* Facebook blue feel */
+    padding: 10px 15px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.auth-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.auth-box button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #1877f2;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #42b72a;
+    color: white;
+}.login-form {
+    display: none;
+    width: 90%;
+    max-width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f0f2f5;
+}
+
+.login-form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login-submit {
+    width: 100%;
+    padding: 10px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #1877f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-box {
+    display: inline-block;
+}
+
+.logo-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.app-name {
+    display: block;
+    color: white;
+    font-size: 22px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Auth Buttons */
+.auth-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.auth-box button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #1877f2;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #42b72a;
+    color: white;
+}
+
+/* Login Form */
+.login-form {
+    display: none;
+    width: 90%;
+    max-width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f0f2f5;
+}
+
+.login-form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login-submit {
+    width: 100%;
+    padding: 10px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
