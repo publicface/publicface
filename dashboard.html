@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PUBLIC FACE Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="text-align:center; margin-top:50px;">
 
+  <h1>PUBLIC FACE</h1>
+  <h2 id="welcomeUser"></h2>
+
+  <button onclick="logout()">Logout</button>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("publicface_user"));
+
+    if (!user) {
+      window.location.href = "index.html";
+    } else {
+      document.getElementById("welcomeUser").innerText =
+        "Welcome to " + user.username;
+    }
+
+    function logout() {
+      localStorage.removeItem("publicface_user");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
