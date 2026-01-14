@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUBLIC FACE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUBLIC FACE</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1877f2">
 </head>
+
 <body>
 
 <header class="header">
-    <div class="logo-box">
-        <img src="images/logo.png" alt="PUBLIC FACE Logo" width="80">
-        <span class="app-name">PUBLIC FACE</span>
-    </div>
-    
+  <div class="logo-box">
+    <img src="images/logo.png" width="80">
+    <span class="app-name">PUBLIC FACE</span>
+  </div>
 </header>
-<script src="script.js"></script>
-</body>
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js")
-    .then(() => console.log("Service Worker Registered"));
-}
-</script>
-</html>
+
 <!-- SIGNUP FORM -->
 <div class="form-box" id="signupForm">
-    <h3>Sign up for PUBLIC FACE</h3>
-    <input id="signupName" placeholder="Name">
-    <input id="signupEmail" p7laceholder="Email or Phone">
-    <input id="signupPassword" type="password" placeholder="Password">
-    <button type="button" class="signup-submit">Sign Up</button>
-    <p>
-        Already have an account?
-        <span id="showLogin" style="color:blue;cursor:pointer;">Login</span>
-    </p>
+  <h3>Sign up for PUBLIC FACE</h3>
+  <input id="signupUsername" placeholder="Name">
+  <input id="signupEmail" placeholder="Email or Phone">
+  <input id="signupPassword" type="password" placeholder="Password">
+  <button type="button" onclick="signup()">Sign Up</button>
+  <p>
+    Already have an account?
+    <span onclick="showLogin()" style="color:blue;cursor:pointer;">Login</span>
+  </p>
 </div>
 
 <!-- LOGIN FORM -->
 <div class="form-box" id="loginForm" style="display:none;">
-    <h3>Login to PUBLIC FACE</h3>
-    <input id="loginEmail" placeholder="Email or Phone">
-    <input id="loginPassword" type="password" placeholder="Password">
-    <button type="button" class="login-submit">Login</button>
-    <p>
-        Don’t have an account?
-        <span id="showSignup" style="color:blue;cursor:pointer;">Sign Up</span>
-    </p>
+  <h3>Login to PUBLIC FACE</h3>
+  <input id="loginUsername" placeholder="Name">
+  <input id="loginPassword" type="password" placeholder="Password">
+  <button type="button" onclick="login()">Login</button>
+  <p>
+    Don’t have an account?
+    <span onclick="showSignup()" style="color:blue;cursor:pointer;">Sign Up</span>
+  </p>
 </div>
-<!-- force deploy -->
 
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none; text-align:center; margin-top:40px;">
+  <h1>PUBLIC FACE</h1>
+  <h2 id="dashboardUser"></h2>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+      </html>
